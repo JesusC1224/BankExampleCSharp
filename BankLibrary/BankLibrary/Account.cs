@@ -28,5 +28,13 @@ namespace BankLibrary
             if (amount > Balance) { throw new InvalidCastException("Insufficient funds"); }
             Balance -= amount;
         }
+
+        public static List<Account> Accounts { get; private set; }
+        public static void GenerateTestAccounts()
+        {
+            Accounts = new List<Account>();
+            Accounts.Add(new SavingsAccount("1001", "Alice", 1000, 0.04m));
+            Accounts.Add(new SavingsAccount("1001", "Bob", 1000, 0.03m));
+        }
     }
 }

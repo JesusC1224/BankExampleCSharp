@@ -12,7 +12,7 @@ namespace BankLibrary
         public decimal overdraftLimit {  get; set; }
         public CheckingAccount(String accountNumber, string accountName, decimal initialBalance, decimal overDraftLimit) : base(accountNumber, accountName, initialBalance)
         {
-            overDraftLimit = overDraftLimit
+            overDraftLimit = overDraftLimit;
         }
         public override void Withdraw(decimal amount)
         {
