@@ -19,8 +19,8 @@ namespace BankLibrary
         }
         public virtual void Deposit(decimal amount)
         {
-            if (amount > 0) { throw new ArgumentException("deposit amount must be positive"); }
-            Balance += amount;
+            if (amount < 0) { throw new ArgumentException("deposit amount must be positive"); }
+           Balance += amount;
         }
         public virtual void Withdraw(decimal amount)
         {
