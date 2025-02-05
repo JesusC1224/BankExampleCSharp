@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BankLibrary;
 
-namespace BankServices
+namespace BankServices 
 {
     internal class Program
     {
